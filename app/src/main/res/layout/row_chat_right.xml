@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    android:id="@+id/messageLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:visibility="gone"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:id="@+id/profileTv"
+            app:c_border_color="@null"
+            android:src="@drawable/ic_face"/>
+
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/ubuntu_lightitalic"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_10ssp"
+            android:text="02/03/2019 05:39 PM"/>
+
+        <TextView
+            android:id="@+id/messageTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_sender"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/timeTv"
+            android:layout_toEndOf="@id/timeTv"
+            android:textSize="@dimen/_13ssp"
+            android:padding="@dimen/_15sdp"
+            android:text="His message"/>
+
+
+        <ImageView
+            android:id="@+id/messageImage"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="@dimen/_180sdp"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/_15sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_sender"
+            android:src="@drawable/ic_blackimage"
+            android:scaleType="fitCenter"/>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/seenTv"
+        android:fontFamily="@font/ubuntu_lightitalic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:visibility="gone"
+        android:gravity="end"
+        android:text="delivered"/>
+
+
+</LinearLayout>

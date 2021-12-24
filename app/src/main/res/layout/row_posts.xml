@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_3sdp"
+    app:cardElevation="@dimen/_1sdp"
+    app:contentPadding="@dimen/_5sdp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/colorwhite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                android:id="@+id/uPicTv"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_face_yellow"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                
+                <TextView
+                    android:id="@+id/uNameTv"
+                    android:text="Name"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15ssp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:id="@+id/pTimeTv"
+                    android:fontFamily="@font/ubuntu_lightitalic"
+                    android:text="33 min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/moreBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/ic_more_black"/>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#f5f0f0"/>
+
+        <TextView
+            android:id="@+id/pTitleTv"
+           android:textSize="@dimen/_15ssp"
+            android:text="Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:autoLink="all"
+            />
+
+
+        <TextView
+            android:id="@+id/pDescriptionTv"
+            android:textSize="@dimen/_14ssp"
+            android:text="Description of the post"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            />
+        
+        <ImageView
+            android:id="@+id/pImageTv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:background="@color/colorwhite"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/pLikesTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/ubuntu_lightitalic"
+                android:text="1.2k Likes"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/pCommentsTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:fontFamily="@font/ubuntu_lightitalic"
+                android:text="1.2k Comments"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#f5f0f0"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            
+            <Button
+                android:id="@+id/likeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="LIKE"
+                android:fontFamily="@font/ubuntu_lightitalic"
+                android:drawableLeft="@drawable/ic_like_black"
+                android:drawablePadding="@dimen/_5sdp"
+                android:background="@color/colorwhite"
+                android:drawableStart="@drawable/ic_like_black" />
+            <Button
+                android:id="@+id/commentBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/ubuntu_lightitalic"
+                android:text="COMMENT"
+                android:drawableLeft="@drawable/ic_comment_black"
+                android:drawablePadding="@dimen/_5sdp"
+                android:background="@color/colorwhite"
+                android:drawableStart="@drawable/ic_comment_black" />
+
+            <Button
+                android:id="@+id/shareBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/ubuntu_lightitalic"
+                android:text="SHARE"
+                android:drawableLeft="@drawable/ic_share_black"
+                android:drawablePadding="@dimen/_5sdp"
+                android:background="@color/colorwhite"
+                android:drawableStart="@drawable/ic_share_black" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

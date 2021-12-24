@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPostActivity">
+
+    <LinearLayout
+        android:layout_margin="@dimen/_2sdp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <!--EditText:input post title-->
+        <EditText
+            android:id="@+id/pTitle"
+            android:padding="@dimen/_10sdp"
+            android:hint="Enter Title"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editorstyle"/>
+
+        <!--ImageView: Input post Image-->
+        <ImageView
+            android:id="@+id/pImage"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/_200sdp"/>
+        <!--EditText:input post decsription-->
+        
+        <EditText
+            android:id="@+id/pDescription"
+
+            android:background="@drawable/editorstyle"
+            android:hint="Enter Description"
+            android:gravity="start"
+            android:padding="@dimen/_10sdp"
+            android:inputType="textCapSentences|textMultiLine"
+            android:minHeight="@dimen/_120sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <!---Button:Publish post to firsbase-->
+        
+        <Button
+            android:id="@+id/pUpload"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="Upload"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>

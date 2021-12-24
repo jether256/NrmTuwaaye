@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "92845320609",
+    "firebase_url": "https://nrm-tuwaaye.firebaseio.com",
+    "project_id": "nrm-tuwaaye",
+    "storage_bucket": "nrm-tuwaaye.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92845320609:android:2369c9ce7a769ceefcc3e0",
+        "android_client_info": {
+          "package_name": "com.jether.nrmtuwaaye"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "92845320609-hvullhse70pjptf8rgrq0po5mgqc2bfu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC98_6j5EoFCapHmkknR6XavZHV3k0wVeE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "92845320609-hvullhse70pjptf8rgrq0po5mgqc2bfu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

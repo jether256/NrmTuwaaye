@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="@dimen/_3sdp"
+    app:cardBackgroundColor="@color/colorwhite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/profileTv"
+            android:layout_width="@dimen/_70sdp"
+            android:src="@drawable/ic_face_yellow"
+            android:layout_height="@dimen/_70ssp"/>
+
+        <!--Imageview:online/offline status-->
+        <ImageView
+            android:id="@+id/onlineStatusTv"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20ssp"/>
+        
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:text="His name"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_15ssp"
+            android:layout_toEndOf="@+id/profileTv"
+            android:layout_toRightOf="@id/profileTv"/>
+
+
+        <TextView
+            android:id="@+id/lastMessageTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:text="The last message"
+            android:maxLines="2"
+            android:layout_below="@id/nameTv"
+            android:layout_toEndOf="@+id/profileTv"
+            android:layout_toRightOf="@id/profileTv"/>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#f5f0f0"/>
+
+</androidx.cardview.widget.CardView>
